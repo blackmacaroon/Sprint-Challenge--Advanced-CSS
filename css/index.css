@@ -160,6 +160,45 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.nav div {
+  width: 48%;
+}
+.nav div h1 {
+  font-size: 3.8rem;
+}
+@media only screen and (min-width: 320px) and (max-width: 732px) {
+  .nav div {
+    width: 100%;
+  }
+}
+.nav .anchors {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav a {
+  color: black;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 732px) {
+  .nav .logo {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 732px) {
+  .nav {
+    flex-direction: column;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
