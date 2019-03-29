@@ -46,6 +46,7 @@
     p {
       margin-top: 13px;
     }
+
   }
 
   .walk {
@@ -67,19 +68,16 @@
       }
 
       .btn {
-        width: 80%;
         position: relative;
-  
-        button {
-          .butt(80px, @btn-font, @btn-bg);
-
-          &:hover{
-            .buttflip();
-          }
-
-        }
         
       }
+
+      @media @mobile {
+        width: 100%;
+        margin: 26px 0;
+      }
+
+
     }
 
     .walk-img {
@@ -91,6 +89,17 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @mobile {
+        width: 100%;
+        margin: 0;
+
+      }
     }
-  }
+    @media @mobile {
+      flex-direction: column-reverse;
+      padding: 26px 0 0 0;
+    }
+
+  } //walk
 }// home
