@@ -1,1 +1,19 @@
 // Mixins Here
+.test(){
+      border: 1px solid red;
+    }
+
+.center() {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+.butt (@wide: 60px, @btn-font, @btn-bg) {
+      width: @wide;
+      color: @btn-font;
+      background-color: @btn-bg;
+      border-radius: 10px;
+      padding: 10px 0;
+      margin-top: 10px;
+}

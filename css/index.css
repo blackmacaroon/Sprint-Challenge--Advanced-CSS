@@ -155,10 +155,21 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+img {
+  width: 100%;
+}
+header {
+  background: #F1F1F1;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+@media only screen and (min-width: 320px) and (max-width: 732px) {
+  .container {
+    padding: 0 5%;
+  }
 }
 .nav {
   width: 100%;
@@ -250,6 +261,18 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 80%;
+  position: relative;
+}
+.home .walk .walk-text .btn button {
+  width: 80px;
+  color: #F6F6F6;
+  background-color: #22283A;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin-top: 10px;
 }
 .home .walk .walk-img {
   width: 46%;
