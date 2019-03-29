@@ -237,6 +237,15 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media only screen and (min-width: 320px) and (max-width: 732px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -273,6 +282,10 @@ footer {
   border-radius: 10px;
   padding: 10px 0;
   margin-top: 10px;
+}
+.home .walk .walk-text .btn button:hover {
+  color: #22283A;
+  background-color: #F6F6F6;
 }
 .home .walk .walk-img {
   width: 46%;

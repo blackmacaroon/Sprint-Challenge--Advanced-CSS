@@ -25,6 +25,15 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    @media @mobile {
+      .sky, .launch {
+        display: none;
+      }
+      .blast {
+        width: 100%;
+      }
+    }
   }
 
   .visit-planets {
@@ -63,6 +72,11 @@
   
         button {
           .butt(80px, @btn-font, @btn-bg);
+
+          &:hover{
+            .buttflip();
+          }
+
         }
         
       }
