@@ -30,9 +30,50 @@ p {
   line-height: 1.4;
 }
 
+img {
+  width: 100%;
+}
+
+header { 
+  background: @nav-border;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+  
+}
+
+button {
+  .butt(@btn-font, @btn-bg);
+
+  &:hover{
+    .buttflip();
+  }
+
+  @media @mobile {
+    width: 100%;
+    padding: 26px 0;
+    font-size: 2.8rem;
+  }
+
+}
+
+.content {
+  padding-top: 90px;
+
+  @media @mobile{
+    padding-top: 120px;
+  }
+}
+
+
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+
+  @media @mobile {
+    padding: 0 5%;
+  }
 }
 

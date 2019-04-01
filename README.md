@@ -33,14 +33,26 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+================================
+Responvie websites RESPOND to the size of the browser, every element fluidly transitions with the size of the browser window. Rexponsive is percent based. It's created with one layout and provides optimal viewing for ANY screen. Responsive is harder to create but loads faster.
+Adaptive adapts to specific screen breakpoints. It's a jerky transition if someone is resizing a browser window, but it works well as one site transitions across devices. Adaptive is pixel based and requires different layouts for each distince viewport. 
 
 2. Describe what it means to be mobile first vs desktop first.
+================================
+If I'm big-boss, everything will be mobile-first. The design starts with the smallest screen and works it's way up into larger viewports. In the USA, 71% of time online is spent on a phone or tablet. Smaller screen size has changed the desired website layouts. It's important for every website to be responsive to small screens. Desktop-first usually requires a separete layout for "mobile versions" or reequires left-to-right scrolling, or data is cut off on the sides. Mobile-first has faster load times. I don't go to restaurants or stores that don't have mobile-friendly websites because I assume all of their business practices are equally archaic.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+================================
+We use 62.5% as a font-size in our HTML tag to set a responsive font size for the entire page. When a thing is percent based, it transitions smoothly between screen sizes. 16 pixels is the traditional best-case font size, but that's not easily converted into percents. If we set the whole page to be 62.5%, the pixel equivalent is 10. 10px is easier math. Enter REMs, the responsive unit of measurement. 1 REM = 10px. Easy math for easy font sizing for every element on the whole page.
+
 
 4. How would you describe preprocessing to someone new to CSS?
+=================================
+Preprocessors are translators. CSS isn't very intuitive. It's rules are archaic and the organization is tedious and repetative. Preprocessors allow you to write intuitive style sheets with convenient methods that vanilla CSS doesn't recognize, then passes it through a compiler which translates your pretty code back to vanilla CSS so the browsers can read it.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+==================================
+I LOVE variables for easily changing properties across the entire page and i LOVE escapes for easily styling elements to respond to screen size changes. I'm not sold on mixins yet, but I see where they will come in handy with HUGE stylesheets. Our projects right now are rather small..
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

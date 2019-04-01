@@ -1,1 +1,24 @@
 // Mixins Here
+.test(){
+      border: 1px solid red;
+    }
+
+.center() {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+.butt (@btn-font, @btn-bg) {
+      width: 100px;
+      color: @btn-font;
+      background-color: @btn-bg;
+      border-radius: 10px;
+      padding: 10px 0;
+      margin-top: 10px;
+}
+
+.buttflip () {
+      color: @btn-bg;
+      background-color: @btn-font;
+}
